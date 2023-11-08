@@ -22,6 +22,8 @@
 /datum/sprite_accessory/penis/nondescript
 	icon_state = "nondescript"
 	name = "Nondescript"
+	taur_icon = 'icons/obj/genitals/taur_penis_onmob2.dmi'
+	taur_dimension_x = 64
 
 /datum/sprite_accessory/penis/knotted
 	icon_state = "knotted"
@@ -67,6 +69,8 @@
 /datum/sprite_accessory/testicles/single
 	icon_state = "single"
 	name = "Pair of testicles" //Clarifies it for something else
+	taur_icon = 'icons/obj/genitals/taur_testicles_onmob.dmi'
+	taur_dimension_x = 64
 
 /datum/sprite_accessory/testicles/sheath
 	icon_state = "sheath"
