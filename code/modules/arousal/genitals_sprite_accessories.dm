@@ -70,7 +70,7 @@
 	icon_state = "single"
 	name = "Pair of testicles" //Clarifies it for something else
 	taur_icon = 'icons/obj/genitals/taur_testicles_onmob.dmi'
-	taur_dimension_x = 64
+	taur_dimension_x = 32
 
 /datum/sprite_accessory/testicles/sheath
 	icon_state = "sheath"
