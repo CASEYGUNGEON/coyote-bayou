@@ -1409,3 +1409,24 @@ Edit: TK~  This is the dumbest fucking shit I've ever seen in my life.  This isn
 		The spirits may be merciful, better hope they are in a good mood!")
 	lose_text = span_notice("You are no longer opted out of Second Wind! If you die, you will be able to revive yourself!")
 	locked =  FALSE
+
+/datum/quirk/youhearthat
+	name = "Auditory Hallucinations"
+	desc = "Did you hear that?"
+	value = -8
+	category = "Lifepath Quirks"
+	mechanics = "You occasionally hear startling noises that nobody else does."
+
+/datum/quirk/fumbler
+	name = "Butterfingers"
+	desc = "You sometimes fumble important things at the worst moments."
+	desc = -20
+	category = "Lifepath Quirks"
+	mechanics = "Weapons and ammo might slip from your hands as you try to grasp them."
+
+/datum/quirk/audiophile
+	name = "Music Snob"
+	desc = "Ugh. Amateurs."
+	desc = -10
+	category = "Lifepath Quirks"
+	mechanics = "Hearing anyone else play music sours your mood."
