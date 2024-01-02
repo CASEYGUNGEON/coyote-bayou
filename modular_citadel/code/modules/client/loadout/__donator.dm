@@ -1464,6 +1464,72 @@
 	new /obj/item/reagent_containers/food/snacks/jellysandwich/pbj/cherry(src)
 	new /obj/item/reagent_containers/food/drinks/flask/vault13(src)
 
+/datum/gear/donator/kits/smokeyocity/amar
+	name = "Amar"
+	path = /obj/item/melee/transforming/plasmacutter/sword/amar
+	ckeywhitelist = list("smokeyocity")
+
+/obj/item/melee/transforming/plasmacutter/sword/amar
+	name = "dagger hilt"
+	hitsound_on = 'sound/weapons/etherealhit.ogg'
+
+/obj/item/pen/edagger/amar/attack_self(mob/living/user)
+	if(on)
+		on = FALSE
+		force = initial(force)
+		throw_speed = initial(throw_speed)
+		w_class = initial(w_class)
+		name = initial(name)
+		hitsound = initial(hitsound)
+		embedding = list(embed_chance = EMBED_CHANCE)
+		throwforce = initial(throwforce)
+		playsound(user, 'sound/weapons/etherealmiss.ogg', 5, TRUE)
+		to_chat(user, span_warning("[src] can now be concealed."))
+	else
+		on = TRUE
+		force = 30
+		throw_speed = 4
+		w_class = WEIGHT_CLASS_NORMAL
+		name = "Colorful Dagger"
+		hitsound = 'sound/weapons/etherealhit.ogg'
+		embedding = list(embed_chance = 100) //rule of cool
+		throwforce = 45
+		playsound(user, 'sound/weapons/etherealmiss.ogg', 5, TRUE)
+		to_chat(user, span_warning("[src] is now active."))
+	updateEmbedding()
+	update_icon()
+
+/obj/item/pen/edagger/update_icon_state()
+	if(on)
+		icon_state = item_state = "swordpurple"
+	else
+		icon_state = initial(icon_state)
+		item_state = initial(item_state)
+
+/datum/gear/donator/kits/smokeyocity/chef
+	name = "Chef's Trusty Chainsaw"
+	path = /obj/item/twohanded/chainsaw/chef
+	ckeywhitelist = list("smokeyocity")
+
+/obj/item/twohanded/chainsaw/chef
+	name = "strange chainsaw"
+	desc = "This doesn't look like a regular chainsaw."
+	slot_flags = INV_SLOTBIT_BACK | INV_SLOTBIT_SUITSTORE
+	force_wielded = 40
+
+/datum/gear/donator/kits/smokeyocity/veer
+	name = "Veerbox"
+	path = /obj/item/storage/box/large/custom_kit/smokeyocity/veer
+	ckeywhitelist = list("smokeyocity")
+
+/obj/item/storage/box/large/custom_kit/smokeyocity/veer/PopulateContents()
+	new /obj/item/gun/energy/kinetic_accelerator(src)
+	new /obj/item/clothing/neck/tie/gob/black/veer(src)
+
+/obj/item/clothing/neck/tie/gob/black/veer
+	name = "old feathered cloak"
+	desc = "An old cloak covered in many black feathers."
+
 /datum/gear/donator/kits/soulwinter446
 	name = "Shocome's relic cross"
 	path = /obj/item/nullrod/rosary/keep_as_is
