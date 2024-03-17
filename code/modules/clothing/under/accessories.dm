@@ -828,6 +828,21 @@
 	icon_state = "prisoner_skirt"
 	minimize_when_attached = FALSE
 
+// random british commonwealth stuff
+/obj/item/clothing/accessory/kilt/green
+	name = "green kilt"
+	desc = "A green kilt."
+	icon = 'icons/obj/clothing/random_British_commonwealth_stuff.dmi'
+	icon_state = "green_kilt"
+	item_state = "green_kilt"
+
+/obj/item/clothing/accessory/kilt/red
+	name = "red kilt"
+	desc = "A red kilt."
+	icon = 'icons/obj/clothing/random_British_commonwealth_stuff.dmi'
+	icon_state = "red_kilt"
+	item_state = "red_kilt"
+
 /obj/item/clothing/accessory/ncrfjacketcrop
 	name = "\improper Cropped Denim Jacket"
 	desc = "Yeah, you go hard."

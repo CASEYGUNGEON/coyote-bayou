@@ -131,6 +131,14 @@
 /obj/item/clothing/shoes/jackboots/fast
 	slowdown = -1
 
+//random british commonwealth stuff
+/obj/item/clothing/shoes/jackboots/ww1_puttee
+	name = "WW1 puttees"
+	desc =  "British commonwealth style ankle boots and long woolen puttees used during WW1."
+	icon = 'icons/obj/clothing/random_British_commonwealth_stuff.dmi'
+	icon_state = "ww1_puttees"
+	item_state = "ww1_puttees"
+
 /obj/item/clothing/shoes/winterboots
 	name = "winter boots"
 	desc = "Boots lined with 'synthetic' animal fur."

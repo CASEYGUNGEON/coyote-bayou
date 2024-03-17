@@ -794,3 +794,13 @@
 	name  = "Cowboy Vest"
 	path = /obj/item/clothing/accessory/sheriffvest
 	cost = 0
+
+/datum/gear/backpack/kilt/green
+	name = "green kilt"
+	path = /obj/item/clothing/accessory/kilt/green
+	cost = 0
+
+/datum/gear/backpack/kilt/red
+	name = "red kilt"
+	path = /obj/item/clothing/accessory/kilt/red
+	cost = 0

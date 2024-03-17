@@ -1051,6 +1051,14 @@
 	item_state = "Canadian_coat"
 	armor = ARMOR_VALUE_LIGHT
 
+/obj/item/clothing/suit/ww1_scot
+	name = "WW1 Scot Coat"
+	desc = "A coat worn by Scottish soldiers in WW1."
+	icon = 'icons/obj/clothing/random_British_commonwealth_stuff.dmi'
+	icon_state = "ww1_scot"
+	item_state = "ww1_scot"
+	armor = ARMOR_VALUE_LIGHT
+
 /obj/item/clothing/suit/gob/adamantite
 	name = "adamantite coat"
 	desc = "A purple kinda fancy looking coat."

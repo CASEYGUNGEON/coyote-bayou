@@ -1473,3 +1473,11 @@ datum/gear/head/steelpot_bandolier
 /datum/gear/head/hoodcowl
 	name = "Hood cowl"
 	path= /obj/item/clothing/head/hoodcowl
+
+/datum/gear/head/mountie_hat
+	name = "mountie hat"
+	path = /obj/item/clothing/head/mountie_hat
+
+/datum/gear/head/ww1_slouch
+	name = "ww1 slouch hat"
+	path = /obj/item/clothing/head/slouch/ww1

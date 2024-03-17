@@ -2095,3 +2095,11 @@
 	path = /obj/item/clothing/suit/toggle/labcoat/emt/highvis
 	subcategory = LOADOUT_SUBCATEGORY_SUIT_MEDICAL
 	cost = 1
+
+//random british commonwealth stuff
+
+/datum/gear/suit/ww1_scot_coat
+	name = "ww1 Scot coat"
+	path = /obj/item/clothing/suit/ww1_scot
+	subcategory = LOADOUT_SUBCATEGORY_SUIT_GENERAL
+	cost = 1

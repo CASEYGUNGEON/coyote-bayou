@@ -368,6 +368,22 @@
 			var/mob/living/carbon/C = user
 			C.head_update(src, forced = 1)
 
+//random british commonwealth stuff
+
+/obj/item/clothing/head/slouch/ww1
+	name = "WW1 slouch hat"
+	desc = "A khaki fur felt hat adopted by the Australian army in the late 1800s, it has a puggaree hat band and has a cattleman esk crease. Was in use as its standard head gear before the bombs fell"
+	icon = 'icons/obj/clothing/random_British_commonwealth_stuff.dmi'
+	icon_state = "ww1_slouch_hat"
+	item_state = "ww1_slouch_hat"
+	can_toggle = 1
+	actions_types = list(/datum/action/item_action/toggle)
+
+/obj/item/clothing/head/mountie_hat
+	name = "canadian mountie hat"
+	icon = 'icons/obj/clothing/random_British_commonwealth_stuff.dmi'
+	icon_state = "canadian_mountie_hat"
+	item_state = "canadian_mountie_hat"
 
 //////////////////////////////////
 //Fenis Helmet & Hat-a-polooza///
