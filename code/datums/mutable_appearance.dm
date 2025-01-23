@@ -10,8 +10,12 @@
 						// And yes this does have to be in the constructor, BYOND ignores it if you set it as a normal var
 
 // Helper similar to image()
-/proc/mutable_appearance(icon, icon_state = "", layer = FLOAT_LAYER, plane = FLOAT_PLANE, color = "#FFFFFF")
-	var/mutable_appearance/MA = new()
+/proc/mutable_appearance(icon, icon_state = "", layer = FLOAT_LAYER, plane = FLOAT_PLANE, color = "#FFFFFF", location = null)
+	var/mutable_appearance/MA = null
+	if(!isnull(location))
+		MA = new(location)
+	else
+		MA = new()
 	MA.icon = icon
 	MA.icon_state = icon_state
 	MA.layer = layer
@@ -20,4 +24,5 @@
 		MA.filters = filter(type="layer", x=rand(-16,16), y=0, icon='icons/effects/rainbow_gradient.dmi', blend_mode=BLEND_MULTIPLY)
 		return MA
 	MA.color = color
+
 	return MA
